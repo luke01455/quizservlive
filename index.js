@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const typeDefs = require("./graphql/schema");
 
 const resolvers = require("./graphql/resolvers");
-const { MONGODB } = require("./config.js");
+const { MONGODB } = require("./config/config.js");
 
 const cron = require("node-cron");
 let shell = require("shelljs");
