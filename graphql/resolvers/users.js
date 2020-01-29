@@ -4,7 +4,7 @@ const { UserInputError } = require('apollo-server')
 const checkAuth = require('../../utils/checkAuth')
 
 const { validateRegisterInput, validateLoginInput } = require('../../utils/validators')
-const { SECRET_KEY } = require('../../config')
+const { SECRET_KEY } = require('../../config/config')
 const User = require('../../models/User')
 
 const generateToken = (user) => {
